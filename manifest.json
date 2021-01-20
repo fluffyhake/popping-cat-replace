@@ -10,5 +10,10 @@
           ],
           "js": ["uber-replacer.js"]
         }
-    ]
+    ],
+    "page_action": {
+      "default_icon": "popping.gif",
+      "default_popup": "popup.html"
+    },
+    "web_accessible_resources": ["popping.gif"]
 }

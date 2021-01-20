@@ -1,9 +1,13 @@
+
 var image = document.querySelectorAll("img");
 var l = image.length
 
+var poppingGif = chrome.runtime.getURL("popping.gif");
+console.log(poppingGif)
+
 for (let i = 0; i < l; i++) {
-  image[i].src= "https://i.kym-cdn.com/photos/images/newsfeed/001/931/959/2e4.gif"
-  image[i].srcset= "https://i.kym-cdn.com/photos/images/newsfeed/001/931/959/2e4.gif"
+  image[i].src= poppingGif
+  image[i].srcset= poppingGif
 }
 
 console.log("POPPING PLUGIN INITIATED");
@@ -12,8 +16,8 @@ function replacepop() {
     var l = image.length
     console.log("REPLACINGGGGG")
     for (let i = 0; i < l; i++) {
-        image[i].src= "https://i.kym-cdn.com/photos/images/newsfeed/001/931/959/2e4.gif"
-        image[i].srcset= "https://i.kym-cdn.com/photos/images/newsfeed/001/931/959/2e4.gif"
+        image[i].src= poppingGif
+        image[i].srcset= poppingGif
     }
 }
 
