@@ -21,4 +21,12 @@ function replacepop() {
     }
 }
 
+var enabled = document.querySelectorAll("enabler")
+
+chrome.runtime.onMessage.addListener(function (request){
+  var 
+})
+
+
+
 setInterval("replacepop()",500);
