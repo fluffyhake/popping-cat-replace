@@ -10,3 +10,5 @@ document.addEventListener('DOMContentLoaded', function () {
     
 
 },false)
+
+var enableSliderToggle = document.querySelectorAll("enabler-slider");

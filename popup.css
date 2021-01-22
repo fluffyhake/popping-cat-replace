@@ -1,4 +1,10 @@
 /* The switch - the box around the slider */
+
+div{
+    size: 100px;
+    background-size: 100px;
+}
+
 .switch {
     position: relative;
     display: inline-block;
