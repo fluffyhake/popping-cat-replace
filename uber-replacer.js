@@ -41,6 +41,7 @@ var enabled = document.querySelectorAll("enabler")
 //     }
 //   }
 //   )
+/*
 chrome.runtime.onMessage.addListener(
   function(request, sender, sendResponse) {
     console.log(sender.tab ?
@@ -55,8 +56,19 @@ chrome.runtime.onMessage.addListener(
       
   }}
 )
+*/
+setInterval(console.log(localStorage.currentState), 500)
 
+function runner() {
+  if (localStorage.currentState="start") {
+    console.log("Enabled in popup")
+    console.log(localStorage.currentState)
+    replacepop()
+  }else if (localStorage.currentState="stop") {
+    console.log("Popping-plugin stopped.")
+    console.log(localStorage.currentState)
+  }else{
+    console.log("Error in uber-replacer reading from localStorage written in popup.js " + localStorage.currentState)
+  }}
 
-
-
-setInterval("replacepop()",500)
+  setInterval(runner(), 500);
